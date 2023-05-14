@@ -1,0 +1,31 @@
+<ng-container [formGroup]="stepForm">
+    <div>3/6</div>
+  <mat-card class="step-three">
+    <mat-card-header>
+      <mat-card-title-group class="title">
+        <mat-card-title role="heading"
+                        aria-level="1">Personal info</mat-card-title>
+        <mat-card-subtitle role="heading"
+                           aria-level="2"
+                           role="heading"
+                           aria-level="2">Please provide your phone number.</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="form-controls">
+      <!-- phone number input -->
+      <div class="input-details">
+        <label for="phone">Phone Number</label>
+        <label for="error"
+               id="error"
+               *ngIf="this.stepForm.controls['phone'].invalid && this.stepForm.controls['phone'].touched"
+               class="error-alert">Phone number is required</label>
+      </div>
+      <input type="text"
+             name="phone"
+             id="phone"
+             placeholder="e.g. +1 234 567 890"
+             formControlName="phone"
+             required>
+    </mat-card-content>
+  </mat-card>
+</ng-container>

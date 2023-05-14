@@ -1,0 +1,31 @@
+<ng-container [formGroup]="stepForm">
+  <mat-card class="step-two">
+    <div>2/6</div>
+    <mat-card-header>
+      <mat-card-title-group class="title">
+        <mat-card-title role="heading" 
+                        aria-level="1">Personal info</mat-card-title>
+        <mat-card-subtitle role="heading"
+                           aria-level="2"
+                           role="heading"
+                           aria-level="2">Please Provide Your City Location.</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="form-controls">
+      <!-- city location input -->
+      <div class="input-details">
+        <label for="city">City Location</label>
+        <label for="error"
+                id="error"
+               *ngIf="this.stepForm.controls['city'].invalid && this.stepForm.controls['city'].touched"
+               class="error-alert">City Location is required</label>
+      </div>
+      <input type="text"
+             name="city"
+             id="city"
+             placeholder="e.g. Lekki"
+             formControlName="city"
+             required>
+    </mat-card-content>
+  </mat-card>
+</ng-container>
