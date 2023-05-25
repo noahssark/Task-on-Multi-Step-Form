@@ -393,23 +393,23 @@ img.home-img {
 
 .signup-div {
   background-color: #03065fcc;
-  width: 80%;
+  width: 40%;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 50px 0px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .signup-div input,
 .signup-div button {
   display: block;
   margin: 0 auto;
-  width: 60%;
-  height: 40px;
+  width: 40%;
+  height: 30px;
   margin-bottom: 20px;
   padding-left: 10px;
   border: #888888 1px solid;
-  border-radius: 10px;
+  border-radius: 5px;
   outline: none;
 }
 
@@ -417,18 +417,6 @@ img.home-img {
   cursor: pointer;
 }
 
-.signup-div prev{
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  width: 60%;
-  height: 40px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  border: #888888 1px solid;
-  border-radius: 10px;
-  outline: none;
-}
 
 /* CSS FOR TABLETS */
 @media only screen and (max-width: 970px) and (min-width: 600px) {

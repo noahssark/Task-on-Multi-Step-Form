@@ -30,7 +30,7 @@ const SignUp = () => {
       {/* MARKUP */}
       <div className="signup-div">
         <form onSubmit={handleLogin}>
-          <h3>Login</h3>
+          <h3>Login To Begin</h3>
           <input
             type="text"
             placeholder="Username"
@@ -45,7 +45,7 @@ const SignUp = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Sign In</button>
+          <button type="submit">Log In</button>
         </form>
       </div>
     </>
