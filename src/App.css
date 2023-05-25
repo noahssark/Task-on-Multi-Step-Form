@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.App-main {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+}
+
+
+/* COMPONENTS */
+
+/* SIDEBAR CSS */
+.sidebar-link {
+  display: flex;
+  text-decoration: none;
+  text-align: right;
+  flex-direction: row-reverse;
+  margin-bottom: 10%;
+}
+.sidebar-link span {
+  font-size: smaller;
+}
+
+.sidebar-icon {
+  margin-top: 3%;
+  margin-left: 10%;
+  border-radius: 100%;
+  color: white;
+  padding: 3%;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.dot {
+  margin-top: 7%;
+  margin-right: -13%;
+  margin-left: 8%;
+}
+
+.top-dot {
+  margin-top: 15%;
+}
+
+.vl {
+  height: 300px;
+  position: absolute;
+  left: 34.25%;
+  margin-top: -2.5%;
+}
+
+#active .sidebar-icon {
+  background-color: rgb(141, 161, 247);
+  color: rgb(42, 20, 235);
+}
+
+#active .dot {
+  color: rgb(141, 161, 247);
+}
+
+#disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.person-icon {
+  margin-top: 11%;
+}
+
+/* DARK & LIGHT MODE CSS */
+.dark {
+  background-color: #03065fcc;
+  color: white;
+}
+.dark .dot {
+  color: #af840c;
+}
+
+.dark a {
+  color: white;
+}
+.dark .sidebar-icon {
+  background-color: #414575;
+  z-index: 9999;
+}
+
+.dark input {
+  background-color:  #03065fcc;
+  box-shadow: 1.5px 1.5px 1.5px rgb(72, 202, 241);
+  color: white;
+}
+
+.dark .vl {
+  border-left: 1px solid #414575;
+}
+
+.light .vl {
+  border-left: 1px solid rgb(78, 78, 116);
+}
+
+.light {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.light a {
+  color: black;
+}
+
+.light .sidebar-icon {
+  background-color: rgb(78, 78, 116);
+  z-index: 9999;
+}
+
+.light .dot {
+  color: rgb(78, 78, 116);
+}
+
+.light input {
+  background-color: white;
+  color: #03065fcc;
+  box-shadow: none;
+}
+
+/* REGISTER PAGE CSS */
+
+.register-container {
+  margin: 0 auto;
+  width: 65%;
+  height: 90vh;
+  border-radius: 10px;
+  padding: 4px 5%;
+  margin-top: 2%;
+}
+
+.mode-btn {
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+.register-flex {
+  display: flex;
+  border-top: 1px solid rgb(178, 190, 181);
+}
+.regsidebar-div {
+  border-right: 1px solid rgb(178, 190, 181);
+  width: 28%;
+  padding-right: 3%;
+}
+
+.skill-level {
+  text-align: left;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputReg-container {
+  text-align: left;
+  padding-left: 8%;
+  width: 57%;
+  margin-top: 20px;
+}
+
+.inputReg-container input {
+  width: 100%;
+  border: 1px solid rgb(72, 202, 241);
+  height: 45px;
+  border-radius: 10px;
+  outline: none;
+  padding-left: 4px;
+}
+
+.text-session {
+  margin-bottom: 20px;
+}
+
+.input-session {
+  border-top: 1px solid rgb(178, 190, 181);
+  padding-top: 20px;
+}
+
+.inputReg-container .button {
+  display: block;
+  margin-top: 10%;
+  font-weight: bold;
+  padding: 15px 30px;
+  background-color: rgb(29, 29, 129);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  float: right;
+  cursor: pointer;
+  outline: none;
+  color: red;
+}
+
+.inputReg-container .prev {
+  display: block;
+  margin-top: 10%;
+  font-weight: bold;
+  padding: 15px 30px;
+  background-color: rgb(29, 29, 129);
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  float: left;
+  cursor: pointer;
+  outline: none;
+  color: red;
+}
+
+/* WELCOME PAGE CSS */
+.welcome-container {
+  background-color: #03065fcc;
+  width: 65%;
+  margin-top: 7%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 3%;
+}
+
+/* HOME PAGE CSS */
+.App-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-flex {
+  display: flex;
+}
+
+nav {
+  width: 96%;
+  background-color: #030769;
+  border-bottom: 1px solid rgb(247, 250, 250);
+  padding: 0 2% 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px;
+  color: aqua;
+  text-align: center;
+  text-decoration: none;
+}
+.li:hover {
+  font-weight: bolder;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: left;
+  background-color: #03065fcc;
+}
+
+.home-general {
+  width: 96%;
+}
+
+.home-flex {
+  display: flex;
+  margin-top: 10%;
+  height: 100vh;
+}
+
+.home-flex h1 {
+  color: rgb(124, 224, 41);
+  font-weight: bolder;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.home-flex h3 {
+  color: aquamarine;
+  margin-bottom: 10px;
+}
+
+.home-flex p {
+  margin-bottom: 40px;
+}
+
+.repo-btn {
+  color: #010449;
+  background-color: aqua;
+  margin-right: 20px;
+}
+
+.repo-btn:hover {
+  color: #010449;
+  background-color: white;
+}
+.link {
+  border-radius: 20px;
+  padding: 3% 7%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  cursor: pointer;
+  width: 7%;
+  height: 7%;
+  background-color: aqua;
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+
+.home-img {
+  width: 82%;
+  margin-left: 15%;
+}
+
+img.home-img {
+  -webkit-animation: mover 1.5s infinite alternate;
+  animation: mover 1.5s infinite alternate;
+}
+img.home-img {
+  -webkit-animation: mover 1.5s infinite alternate;
+  animation: mover 1.5s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80px);
+  }
+}
+
+/* CSS FOR PHONES */
+@media (max-width: 600px) {
+  .home-flex {
+    display: block;
+    height: 90vh;
+  }
+  .welcome-container {
+    margin-top: 20%;
+  }
+  .link {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .regsidebar-div {
+    display: none;
+  }
+  .register-container {
+    margin-top: 10px;
+  }
+  .inputReg-container {
+    width: 90%;
+    margin-right: 20px;
+  }
+
+  .inputReg-container .button {
+    float: none;
+  }
+}
+
+/* CSS FOR SIGNUP COMPONENTS AND INPUTS */
+
+.signup-div {
+  background-color: #03065fcc;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 50px 0px;
+  margin-top: 10%;
+}
+
+.signup-div input,
+.signup-div button {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: #888888 1px solid;
+  border-radius: 10px;
+  outline: none;
+}
+
+.signup-div button{
+  cursor: pointer;
+}
+
+.signup-div prev{
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border: #888888 1px solid;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* CSS FOR TABLETS */
+@media only screen and (max-width: 970px) and (min-width: 600px) {
+  .link {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .light .dot,
+  .dark .dot,
+  .vl,
+  .home-img {
+    display: none;
+  }
+  .sidebar-icon {
+    margin-top: 22%;
+  }
+
+  .home-flex {
+    height: 90vh;
+    padding-left: 10px;
+    display: block;
+  }
+}
+
+/* CSS FOR BIGGER TABLETS */
+
+@media only screen and (max-width: 1160px) and (min-width: 973px) {
+  .home-flex {
+    padding-left: 29px;
+    height: 100vh;
+  }
+
+  .light .dot,
+  .dark .dot,
+  .vl {
+    display: none;
+  }
+
+  .sidebar-icon {
+    margin-top: 16%;
+  }
+}
